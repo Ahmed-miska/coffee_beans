@@ -1,5 +1,6 @@
 import 'package:coffee_beans/core/routing/routs.dart';
 import 'package:coffee_beans/features/onBording/ui/onboarging_screen.dart';
+import 'package:coffee_beans/features/sign_in/ui/sign_in_screen.dart';
 import 'package:coffee_beans/features/splash/ui/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +21,7 @@ class AppRouter {
 
       case Routes.signIn:
         return MaterialPageRoute(
-          builder: (_) => const Scaffold(),
+          builder: (_) => const SignInScreen(),
         );
 
       default:

@@ -1,3 +1,4 @@
+import 'package:coffee_beans/core/theming/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -14,10 +15,38 @@ class AppStyles {
     fontWeight: FontWeight.w500,
     fontFamily: 'tajawal',
   );
-    static TextStyle font16white500 = TextStyle(
+  static TextStyle font16white500 = TextStyle(
     color: Colors.white,
-    fontSize: 18.sp,
+    fontSize: 16.sp,
     fontWeight: FontWeight.w500,
+    fontFamily: 'tajawal',
+  );
+
+  static TextStyle font16lighterBrown500 = TextStyle(
+    color: AppColors.lighterBrown,
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'tajawal',
+  );
+
+  static TextStyle font20lighterBrown700 = TextStyle(
+    color: AppColors.lighterBrown,
+    fontSize: 20.sp,
+    fontWeight: FontWeight.w700,
+    fontFamily: 'tajawal',
+  );
+
+  static TextStyle font16lighterBrown400 = TextStyle(
+    color: AppColors.lighterBrown,
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'tajawal',
+  );
+
+  static TextStyle font14lightBrown400 = TextStyle(
+    color: AppColors.lightBrown,
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w400,
     fontFamily: 'tajawal',
   );
 }

@@ -16,8 +16,8 @@ class CoffeeApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Coffee Beans',
         theme: ThemeData(
-          primaryColor: AppColors.mainBrown,
-          scaffoldBackgroundColor: Colors.white,
+          primaryColor: AppColors.lightBrown,
+          scaffoldBackgroundColor: AppColors.mainBrown,
         ),
         debugShowCheckedModeBanner: false,
         initialRoute: Routes.splash,

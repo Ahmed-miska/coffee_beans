@@ -3,10 +3,10 @@ import 'package:coffee_beans/core/theming/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class CustomBrownTextButton extends StatelessWidget {
+class AppBrownTextButton extends StatelessWidget {
   final String text;
   final Function() onTap;
-  const CustomBrownTextButton({super.key, required this.text, required this.onTap});
+  const AppBrownTextButton({super.key, required this.text, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
