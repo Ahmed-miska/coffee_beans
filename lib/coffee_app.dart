@@ -11,12 +11,12 @@ class CoffeeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(375, 812),
+      designSize: const Size(390, 844),
       minTextAdapt: true,
       child: MaterialApp(
         title: 'Coffee Beans',
         theme: ThemeData(
-          primaryColor: ColorsManager.mainBrown,
+          primaryColor: AppColors.mainBrown,
           scaffoldBackgroundColor: Colors.white,
         ),
         debugShowCheckedModeBanner: false,
