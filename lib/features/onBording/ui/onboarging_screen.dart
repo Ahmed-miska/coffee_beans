@@ -1,6 +1,6 @@
 import 'package:coffee_beans/core/helpers/extensions.dart';
 import 'package:coffee_beans/core/routing/routs.dart';
-import 'package:coffee_beans/core/widgets/custom_text_button.dart';
+import 'package:coffee_beans/core/widgets/app_text_button.dart';
 import 'package:coffee_beans/features/onBording/onboard_page_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -35,7 +35,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             alignment: Alignment.bottomCenter,
             child: Padding(
               padding: EdgeInsets.all(16.w),
-              child: CustomBrownTextButton(
+              child: AppBrownTextButton(
                 text: 'التالي',
                 onTap: () {
                   currentPage == 2
