@@ -22,7 +22,7 @@ class ForgetPasswordScreen extends StatelessWidget {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        color: AppColors.mainBrown,
+        color: AppColors.darkPrimary,
         child: Stack(
           children: [
             Positioned(top: 228.h, left: 370.w, child: const ShadowContainer()),
@@ -42,7 +42,7 @@ class ForgetPasswordScreen extends StatelessWidget {
                   Text('البريد الالكتروني', style: AppStyles.font20lighterBrown700),
                   verticalSpace(16),
                   AppTextFormField(
-                    prefixIcon: Icon(Icons.alternate_email, size: 24.sp, color: AppColors.lightBrown),
+                    prefixIcon: Icon(Icons.alternate_email, size: 24.sp, color: AppColors.primary),
                     hintText: 'mail@mail.com',
                     validator: (value) {
                       // ignore: unnecessary_null_comparison

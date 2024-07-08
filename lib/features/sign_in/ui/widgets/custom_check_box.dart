@@ -17,7 +17,7 @@ class _CustomCheckBoxState extends State<CustomCheckBox> {
         checkboxTheme: CheckboxThemeData(
           side: WidgetStateBorderSide.resolveWith(
             (Set<WidgetState> states) {
-              return const BorderSide(color: AppColors.lighterBrown, width: 1.3);
+              return const BorderSide(color: AppColors.lightPrimary, width: 1.3);
             },
           ),
         ),
@@ -30,8 +30,8 @@ class _CustomCheckBoxState extends State<CustomCheckBox> {
           });
         },
         activeColor: Colors.transparent,
-        checkColor: AppColors.lighterBrown,
-        side: const BorderSide(color: AppColors.lighterBrown, width: 1.3),
+        checkColor: AppColors.lightPrimary,
+        side: const BorderSide(color: AppColors.lightPrimary, width: 1.3),
       ),
     );
   }

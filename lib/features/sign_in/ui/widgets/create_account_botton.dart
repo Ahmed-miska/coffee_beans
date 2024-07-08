@@ -16,7 +16,7 @@ class CreateAccountBotton extends StatelessWidget {
         width: double.infinity,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8.0),
-          border: Border.all(color: AppColors.lighterBrown, width: 2),
+          border: Border.all(color: AppColors.lightPrimary, width: 2),
         ),
         child: Center(
           child: Text(

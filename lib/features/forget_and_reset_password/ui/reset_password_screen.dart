@@ -28,7 +28,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        color: AppColors.mainBrown,
+        color: AppColors.darkPrimary,
         child: Stack(
           children: [
             Positioned(
@@ -65,7 +65,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                       child: Icon(
                         isObscure1 ? Icons.visibility_off_outlined : Icons.visibility_outlined,
                         size: 24.sp,
-                        color: AppColors.lightBrown,
+                        color: AppColors.primary,
                       ),
                     ),
                     hintText: 'ادخل كلمة المرور الجديدة',
@@ -90,7 +90,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                       child: Icon(
                         isObscure2 ? Icons.visibility_off_outlined : Icons.visibility_outlined,
                         size: 24.sp,
-                        color: AppColors.lightBrown,
+                        color: AppColors.primary,
                       ),
                     ),
                     hintText: 'اعد ادخال كلمة المرور مرة اخرى',

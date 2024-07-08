@@ -22,7 +22,7 @@ class SignInScreen extends StatelessWidget {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        color: AppColors.mainBrown,
+        color: AppColors.darkPrimary,
         child: Stack(
           children: [
             Positioned(

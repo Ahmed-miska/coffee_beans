@@ -30,7 +30,7 @@ class _EmailAndPasswordState extends State<EmailAndPassword> {
           prefixIcon: Icon(
             Icons.alternate_email,
             size: 24.sp,
-            color: AppColors.lightBrown,
+            color: AppColors.primary,
           ),
           hintText: '.. ادخل بريدك الالكتروني',
           validator: (value) {
@@ -56,7 +56,7 @@ class _EmailAndPasswordState extends State<EmailAndPassword> {
             child: Icon(
               isObscure ? Icons.visibility_off_outlined : Icons.visibility_outlined,
               size: 24.sp,
-              color: AppColors.lightBrown,
+              color: AppColors.primary,
             ),
           ),
           hintText: 'ادخل كلمة المرور الخاصه بك',
