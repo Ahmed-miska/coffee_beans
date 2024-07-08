@@ -29,9 +29,23 @@ class AppStyles {
     fontFamily: 'tajawal',
   );
 
+  static TextStyle font12lightBrown400 = TextStyle(
+    color: AppColors.lightBrown,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w700,
+    fontFamily: 'tajawal',
+  );
+
   static TextStyle font20lighterBrown700 = TextStyle(
     color: AppColors.lighterBrown,
     fontSize: 20.sp,
+    fontWeight: FontWeight.w700,
+    fontFamily: 'tajawal',
+  );
+
+  static TextStyle font22lighterBrown700 = TextStyle(
+    color: AppColors.lighterBrown,
+    fontSize: 22.sp,
     fontWeight: FontWeight.w700,
     fontFamily: 'tajawal',
   );
