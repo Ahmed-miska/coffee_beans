@@ -52,7 +52,7 @@ class BoardItem extends StatelessWidget {
                   width: 95.w,
                   height: 3.h,
                   decoration: BoxDecoration(
-                    color: index == 0 ? AppColors.lighterBrown : Colors.white,
+                    color: index == 0 ? AppColors.lightPrimary : Colors.white,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
@@ -60,7 +60,7 @@ class BoardItem extends StatelessWidget {
                   width: 95.w,
                   height: 3.h,
                   decoration: BoxDecoration(
-                    color: index == 1 ? AppColors.lighterBrown : Colors.white,
+                    color: index == 1 ? AppColors.lightPrimary : Colors.white,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
@@ -68,7 +68,7 @@ class BoardItem extends StatelessWidget {
                   width: 95.w,
                   height: 3.h,
                   decoration: BoxDecoration(
-                    color: index == 2 ? AppColors.lighterBrown : Colors.white,
+                    color: index == 2 ? AppColors.lightPrimary : Colors.white,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),

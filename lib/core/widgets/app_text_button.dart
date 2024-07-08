@@ -17,7 +17,7 @@ class AppBrownTextButton extends StatelessWidget {
         width: double.infinity,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8.0),
-          color: AppColors.lighterBrown,
+          color: AppColors.lightPrimary,
         ),
         child: Center(
           child: Text(

@@ -12,7 +12,7 @@ class CustomIndacator extends StatelessWidget {
       width: 95.w,
       height: 3.h,
       decoration: BoxDecoration(
-        color: isActive ? AppColors.lighterBrown : Colors.white,
+        color: isActive ? AppColors.lightPrimary : Colors.white,
         borderRadius: BorderRadius.circular(10),
       ),
     );

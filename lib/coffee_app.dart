@@ -11,7 +11,7 @@ class CoffeeApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     SystemChrome.setPreferredOrientations([
+    SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitUp,
       DeviceOrientation.portraitDown,
     ]);
@@ -21,8 +21,8 @@ class CoffeeApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Coffee Beans',
         theme: ThemeData(
-          primaryColor: AppColors.lightBrown,
-          scaffoldBackgroundColor: AppColors.mainBrown,
+          primaryColor: AppColors.primary,
+          scaffoldBackgroundColor: AppColors.darkPrimary,
         ),
         debugShowCheckedModeBanner: false,
         initialRoute: Routes.splash,

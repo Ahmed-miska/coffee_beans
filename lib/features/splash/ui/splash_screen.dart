@@ -30,7 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Container(
         height: double.infinity,
         width: double.infinity,
-        color: AppColors.mainBrown,
+        color: AppColors.darkPrimary,
         child: Stack(
           children: [
             Center(
