@@ -1,6 +1,8 @@
 import 'package:coffee_beans/core/helpers/app_assets.dart';
 import 'package:coffee_beans/core/helpers/app_styles.dart';
+import 'package:coffee_beans/core/helpers/extensions.dart';
 import 'package:coffee_beans/core/helpers/spacing.dart';
+import 'package:coffee_beans/core/routing/routs.dart';
 import 'package:coffee_beans/core/widgets/app_text_button.dart';
 import 'package:coffee_beans/features/sign_in/ui/widgets/create_account_botton.dart';
 import 'package:coffee_beans/features/sign_in/ui/widgets/email_and_password.dart';
@@ -29,11 +31,15 @@ class SignInScreen extends StatelessWidget {
               verticalSpace(12),
               const ForgetPasswordAndRememberText(),
               verticalSpace(24),
-              CreateAccountBotton(onTap: () {}),
+              CreateAccountBotton(
+                onTap: () {
+                  context.pushNamed(Routes.createAccount);
+                },
+              ),
               verticalSpace(12),
               AppBrownTextButton(text: 'تسجيل دخول', onTap: () {}),
               verticalSpace(17),
-              Text('او من خلال', style: AppStyles.font14lightBrown400),
+              Text('او من خلال', style: AppStyles.font14primary400),
               verticalSpace(26),
               const OtherLoginWay()
             ],

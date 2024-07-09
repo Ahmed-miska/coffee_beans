@@ -16,9 +16,9 @@ class ForgetPasswordAndRememberText extends StatelessWidget {
             onTap: () {
               context.pushNamed(Routes.forgetPassword);
             },
-            child: Text('نسيت كلمة المرور ؟', style: AppStyles.font16lighterBrown400)),
+            child: Text('نسيت كلمة المرور ؟', style: AppStyles.font16lightPrimary400)),
         const Spacer(),
-        Text('تذكرني', style: AppStyles.font16lighterBrown400),
+        Text('تذكرني', style: AppStyles.font16lightPrimary400),
         const CustomCheckBox(),
       ],
     );
