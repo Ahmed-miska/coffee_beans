@@ -23,7 +23,7 @@ class _EmailAndPasswordState extends State<EmailAndPassword> {
       children: [
         Text(
           'البريد الالكتروني',
-          style: AppStyles.font20lighterBrown700,
+          style: AppStyles.font20lightPrimary700,
         ),
         verticalSpace(16),
         AppTextFormField(
@@ -43,7 +43,7 @@ class _EmailAndPasswordState extends State<EmailAndPassword> {
         verticalSpace(24),
         Text(
           'كلمة المرور',
-          style: AppStyles.font20lighterBrown700,
+          style: AppStyles.font20lightPrimary700,
         ),
         verticalSpace(16),
         AppTextFormField(

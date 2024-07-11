@@ -21,7 +21,7 @@ class CreateAccountBotton extends StatelessWidget {
         child: Center(
           child: Text(
             'انشاء حساب',
-            style: AppStyles.font16lighterBrown500,
+            style: AppStyles.font16lightPrimary500,
           ),
         ),
       ),
