@@ -59,7 +59,10 @@ class AppTextFormField extends StatelessWidget {
         ),
         hintStyle: hintStyle ?? AppStyles.font14primary400,
         hintText: hintText,
-        prefixIcon: prefixIcon,
+        prefixIcon: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 10.w),
+          child: prefixIcon,
+        ),
       ),
       obscureText: isObscureText ?? false,
       style: hintStyle ?? AppStyles.font20lightPrimary700,

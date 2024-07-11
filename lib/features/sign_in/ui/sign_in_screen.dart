@@ -37,7 +37,12 @@ class SignInScreen extends StatelessWidget {
                 },
               ),
               verticalSpace(12),
-              AppBrownTextButton(text: 'تسجيل دخول', onTap: () {}),
+              AppBrownTextButton(
+                text: 'تسجيل دخول',
+                onTap: () {
+                  context.pushNamed(Routes.home);
+                },
+              ),
               verticalSpace(17),
               Text('او من خلال', style: AppStyles.font14primary400),
               verticalSpace(26),

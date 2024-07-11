@@ -7,5 +7,6 @@ class Routes {
   static const String createAccount = '/createAccount';
   static const String otp = '/otp';
   static const String accountCreated = '/accountCreated';
+  static const String home = '/home';
 
 }
