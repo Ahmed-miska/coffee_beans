@@ -15,9 +15,9 @@ class ShadowContainer extends StatelessWidget {
         borderRadius: BorderRadius.all(Radius.elliptical(115.w, 210.h)),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFFFFA054).withOpacity(.1),
+            color: const Color(0xFFFFA054).withOpacity(.03),
             spreadRadius: 0,
-            blurRadius: 5000,
+            blurRadius: 100,
             offset: const Offset(0, 0),
           ),
         ],
