@@ -20,4 +20,5 @@ class AppAssets {
   static const String cupss = 'assets/images/cups.png';
   static const String cofeCups = 'assets/images/cofe_cups.png';
   static const String myanoPlace = 'assets/images/myano_place.png';
+  static const String girl = 'assets/images/girl.png';
 }
