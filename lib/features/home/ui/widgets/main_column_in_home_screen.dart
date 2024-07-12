@@ -1,5 +1,7 @@
 import 'package:coffee_beans/core/helpers/app_styles.dart';
+import 'package:coffee_beans/core/helpers/extensions.dart';
 import 'package:coffee_beans/core/helpers/spacing.dart';
+import 'package:coffee_beans/core/routing/routs.dart';
 import 'package:coffee_beans/core/theming/colors.dart';
 import 'package:coffee_beans/features/home/ui/widgets/home_list_view_item.dart';
 import 'package:coffee_beans/features/home/ui/widgets/home_list_view_item_two.dart';
@@ -53,7 +55,15 @@ class MainColumnInHomeScreen extends StatelessWidget {
             height: 300.h,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
-              itemBuilder: (context, index) => const HomeListViewItem(),
+              itemBuilder: (context, index) => Padding(
+                padding: EdgeInsets.symmetric(horizontal: 8.w),
+                child: GestureDetector(
+                  onTap: () {
+                    context.pushNamed(Routes.coffeeDetailsOne);
+                  },
+                  child: const HomeListViewItem(),
+                ),
+              ),
               itemCount: 5,
               shrinkWrap: true,
             ),
