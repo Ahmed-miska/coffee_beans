@@ -39,10 +39,10 @@ class RowOfPeople extends StatelessWidget {
         ),
         Expanded(
           child: Text(
-            " شخص قامو بزيارة هذا المكان",
+            "شخص قامو بزيارة هذا المكان",
             style: AppStyles.font16white500.copyWith(color: color),
             textAlign: TextAlign.right,
-            maxLines: 1,
+            maxLines: 2,
             overflow: TextOverflow.ellipsis,
             textDirection: TextDirection.rtl,
           ),

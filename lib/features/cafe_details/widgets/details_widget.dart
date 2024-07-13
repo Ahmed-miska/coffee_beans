@@ -77,7 +77,8 @@ class Details extends StatelessWidget {
             horizontalSpace(20),
             Expanded(child: AppBrownTextButton(text: 'احجز الان', onTap: () {})),
           ],
-        )
+        ),
+        verticalSpace(35),
       ],
     );
   }
