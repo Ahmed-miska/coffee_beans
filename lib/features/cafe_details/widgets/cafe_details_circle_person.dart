@@ -1,6 +1,7 @@
 import 'package:coffee_beans/core/helpers/app_assets.dart';
 import 'package:coffee_beans/core/theming/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CafeDetailsCirclePerson extends StatelessWidget {
   const CafeDetailsCirclePerson({
@@ -10,7 +11,7 @@ class CafeDetailsCirclePerson extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CircleAvatar(
-      radius: 24,
+      radius: 15.r,
       backgroundColor: AppColors.lightPrimary,
       child: Container(
         decoration: BoxDecoration(

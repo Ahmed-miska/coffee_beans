@@ -32,7 +32,7 @@ class Drinks extends StatelessWidget {
             Expanded(child: AppBrownTextButton(text: 'اطلب الان', onTap: () {})),
           ],
         ),
-        verticalSpace(20),
+        verticalSpace(35),
       ],
     );
   }
