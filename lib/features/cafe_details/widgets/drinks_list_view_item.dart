@@ -16,7 +16,7 @@ class DrinksListViewItem extends StatelessWidget {
       width: double.infinity,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
-        color: AppColors.darkGrey.withAlpha(100),
+        color: AppColors.darkGrey,
       ),
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 10.h),

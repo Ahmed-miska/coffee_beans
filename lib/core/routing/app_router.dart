@@ -5,6 +5,7 @@ import 'package:coffee_beans/features/create_account/ui/otp_screen.dart';
 import 'package:coffee_beans/features/create_account/ui/widgets/account_created_screen.dart';
 import 'package:coffee_beans/features/home/ui/home_screen.dart';
 import 'package:coffee_beans/features/onBording/ui/onboarging_screen.dart';
+import 'package:coffee_beans/features/order/ui/order_screen.dart';
 import 'package:coffee_beans/features/sign_in/ui/sign_in_screen.dart';
 import 'package:coffee_beans/features/splash/ui/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -70,6 +71,11 @@ class AppRouter {
       case Routes.coffeeDetailsTwo:
         return MaterialPageRoute(
           builder: (_) => const CafeDetailsTwo(),
+        );
+
+      case Routes.order:
+        return MaterialPageRoute(
+          builder: (_) => const OrderScreen(),
         );
 
       default:

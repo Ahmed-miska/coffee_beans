@@ -1,5 +1,7 @@
 import 'package:coffee_beans/core/helpers/app_styles.dart';
+import 'package:coffee_beans/core/helpers/extensions.dart';
 import 'package:coffee_beans/core/helpers/spacing.dart';
+import 'package:coffee_beans/core/routing/routs.dart';
 import 'package:coffee_beans/core/widgets/app_text_button.dart';
 import 'package:coffee_beans/features/cafe_details/widgets/drinks_list_view_item.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +31,14 @@ class Drinks extends StatelessWidget {
             horizontalSpace(5),
             Text('60.00', style: AppStyles.font28white800),
             horizontalSpace(20),
-            Expanded(child: AppBrownTextButton(text: 'اطلب الان', onTap: () {})),
+            Expanded(
+              child: AppBrownTextButton(
+                text: 'اطلب الان',
+                onTap: () {
+                  context.pushNamed(Routes.order);
+                },
+              ),
+            ),
           ],
         ),
         verticalSpace(35),
