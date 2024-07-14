@@ -1,5 +1,7 @@
 import 'package:coffee_beans/core/helpers/app_styles.dart';
+import 'package:coffee_beans/core/helpers/extensions.dart';
 import 'package:coffee_beans/core/helpers/spacing.dart';
+import 'package:coffee_beans/core/routing/routs.dart';
 import 'package:coffee_beans/core/theming/colors.dart';
 import 'package:coffee_beans/core/widgets/app_text_button.dart';
 import 'package:coffee_beans/core/widgets/back_arrow.dart';
@@ -28,7 +30,7 @@ class OrderScreen extends StatelessWidget {
             top: 415.h,
             left: 195.w,
             child: ShadowContainer(
-              color: Color(0xffE82105).withOpacity(.2),
+              color: const Color(0xffE82105).withOpacity(.2),
             ),
           ),
           Padding(
@@ -102,8 +104,12 @@ class OrderScreen extends StatelessWidget {
                     Text('الاجمالي', style: AppStyles.font18white500.copyWith(color: AppColors.lightPrimary, fontWeight: FontWeight.w700))
                   ],
                 ),
-                Spacer(),
-                AppBrownTextButton(text: 'اطلب الان', onTap: () {}),
+                const Spacer(),
+                AppBrownTextButton(
+                    text: 'اطلب الان',
+                    onTap: () {
+                      context.pushNamed(Routes.payment);
+                    }),
                 verticalSpace(35),
               ],
             ),
