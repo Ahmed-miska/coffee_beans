@@ -84,6 +84,8 @@ class AppRouter {
           builder: (_) => const PaymentScreen(),
         );
 
+      
+
       default:
         return null;
     }

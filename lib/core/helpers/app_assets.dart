@@ -21,4 +21,6 @@ class AppAssets {
   static const String cofeCups = 'assets/images/cofe_cups.png';
   static const String myanoPlace = 'assets/images/myano_place.png';
   static const String girl = 'assets/images/girl.png';
+  static const String visa = 'assets/images/visa.png';
+  static const String vodafone = 'assets/images/vodafone.png';
 }

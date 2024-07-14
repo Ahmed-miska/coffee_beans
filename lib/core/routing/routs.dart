@@ -12,5 +12,7 @@ class Routes {
   static const String coffeeDetailsTwo = '/coffeeDetailsTwo';
   static const String order ='/order';
   static const String payment = '/payment';
+  static const String visa = '/visa';
+  
 
 }
