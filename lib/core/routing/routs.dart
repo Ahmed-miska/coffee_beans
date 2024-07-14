@@ -13,6 +13,7 @@ class Routes {
   static const String order ='/order';
   static const String payment = '/payment';
   static const String visa = '/visa';
-  
+  static const String vodafone = '/vodafone';
+  static const String orderDone = '/orderDone';
 
 }
