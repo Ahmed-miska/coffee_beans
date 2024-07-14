@@ -23,4 +23,5 @@ class AppAssets {
   static const String girl = 'assets/images/girl.png';
   static const String visa = 'assets/images/visa.png';
   static const String vodafone = 'assets/images/vodafone.png';
+  static const String orderDone = 'assets/images/order_done.png';
 }

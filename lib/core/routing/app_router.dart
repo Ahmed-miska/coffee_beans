@@ -5,6 +5,7 @@ import 'package:coffee_beans/features/create_account/ui/otp_screen.dart';
 import 'package:coffee_beans/features/create_account/ui/widgets/account_created_screen.dart';
 import 'package:coffee_beans/features/home/ui/home_screen.dart';
 import 'package:coffee_beans/features/onBording/ui/onboarging_screen.dart';
+import 'package:coffee_beans/features/order/ui/order_done.dart';
 import 'package:coffee_beans/features/order/ui/order_screen.dart';
 import 'package:coffee_beans/features/payment/ui/payment_screen.dart';
 import 'package:coffee_beans/features/sign_in/ui/sign_in_screen.dart';
@@ -84,7 +85,10 @@ class AppRouter {
           builder: (_) => const PaymentScreen(),
         );
 
-      
+      case Routes.orderDone:
+        return MaterialPageRoute(
+          builder: (_) => const OrderDone(),
+        );
 
       default:
         return null;

@@ -1,5 +1,7 @@
 import 'package:coffee_beans/core/helpers/app_styles.dart';
+import 'package:coffee_beans/core/helpers/extensions.dart';
 import 'package:coffee_beans/core/helpers/spacing.dart';
+import 'package:coffee_beans/core/routing/routs.dart';
 import 'package:coffee_beans/core/theming/colors.dart';
 import 'package:coffee_beans/core/widgets/app_text_button.dart';
 import 'package:coffee_beans/core/widgets/back_arrow.dart';
@@ -79,7 +81,11 @@ class PaymentScreen extends StatelessWidget {
                   ],
                 ),
                 const Spacer(),
-                AppBrownTextButton(text: 'اطلب الان', onTap: () {}),
+                AppBrownTextButton(
+                    text: 'اطلب الان',
+                    onTap: () {
+                      context.pushNamed(Routes.orderDone);
+                    }),
                 verticalSpace(35),
               ],
             ),

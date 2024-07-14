@@ -1,6 +1,8 @@
 import 'package:coffee_beans/core/helpers/app_assets.dart';
 import 'package:coffee_beans/core/helpers/app_styles.dart';
+import 'package:coffee_beans/core/helpers/extensions.dart';
 import 'package:coffee_beans/core/helpers/spacing.dart';
+import 'package:coffee_beans/core/routing/routs.dart';
 import 'package:coffee_beans/core/theming/colors.dart';
 import 'package:coffee_beans/core/widgets/app_text_button.dart';
 import 'package:coffee_beans/core/widgets/app_text_form_field.dart';
@@ -112,7 +114,12 @@ class WayOfPayment extends StatelessWidget {
                     ],
                   ),
                   // const Spacer(),
-                  verticalSpace(215), AppBrownTextButton(text: 'اطلب الان', onTap: () {}),
+                  verticalSpace(215),
+                  AppBrownTextButton(
+                      text: 'اطلب الان',
+                      onTap: () {
+                        context.pushNamed(Routes.orderDone);
+                      }),
                   verticalSpace(35),
                 ],
               ),
