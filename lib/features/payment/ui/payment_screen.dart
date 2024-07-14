@@ -3,6 +3,7 @@ import 'package:coffee_beans/core/helpers/spacing.dart';
 import 'package:coffee_beans/core/theming/colors.dart';
 import 'package:coffee_beans/core/widgets/app_text_button.dart';
 import 'package:coffee_beans/core/widgets/back_arrow.dart';
+import 'package:coffee_beans/features/payment/ui/way_of_payment.dart';
 import 'package:coffee_beans/features/payment/ui/widgets/container_of_payment.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -56,15 +57,21 @@ class PaymentScreen extends StatelessWidget {
                 verticalSpace(18),
                 Center(child: Text('او من خلال', style: AppStyles.font16lightPrimary500)),
                 verticalSpace(30),
-                const Row(
+                Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     PaymentWay(
+                      onTap: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const WayOfPayment(isVisa: false)));
+                      },
                       text: 'فودافون كاش',
                       color: Colors.red,
                       icon: 'assets/images/vodafone.png',
                     ),
                     PaymentWay(
+                      onTap: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const WayOfPayment(isVisa: true)));
+                      },
                       text: 'الفيزا',
                       color: AppColors.stars,
                       icon: 'assets/images/visa.png',
