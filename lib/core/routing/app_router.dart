@@ -1,8 +1,13 @@
 import 'package:coffee_beans/core/routing/routs.dart';
+import 'package:coffee_beans/features/cafe_details/cafe_details2.dart';
+import 'package:coffee_beans/features/cafe_details/cafe_details1.dart';
 import 'package:coffee_beans/features/create_account/ui/otp_screen.dart';
 import 'package:coffee_beans/features/create_account/ui/widgets/account_created_screen.dart';
 import 'package:coffee_beans/features/home/ui/home_screen.dart';
 import 'package:coffee_beans/features/onBording/ui/onboarging_screen.dart';
+import 'package:coffee_beans/features/order/ui/order_done.dart';
+import 'package:coffee_beans/features/order/ui/order_screen.dart';
+import 'package:coffee_beans/features/payment/ui/payment_screen.dart';
 import 'package:coffee_beans/features/sign_in/ui/sign_in_screen.dart';
 import 'package:coffee_beans/features/splash/ui/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -49,7 +54,7 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (_) => const OtpScreen(),
         );
-        
+
       case Routes.accountCreated:
         return MaterialPageRoute(
           builder: (_) => const AccountCreatedScreen(),
@@ -59,7 +64,32 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (_) => const HomeScreen(),
         );
-        
+
+      case Routes.coffeeDetailsOne:
+        return MaterialPageRoute(
+          builder: (_) => const CafeDetailsOne(),
+        );
+
+      case Routes.coffeeDetailsTwo:
+        return MaterialPageRoute(
+          builder: (_) => const CafeDetailsTwo(),
+        );
+
+      case Routes.order:
+        return MaterialPageRoute(
+          builder: (_) => const OrderScreen(),
+        );
+
+      case Routes.payment:
+        return MaterialPageRoute(
+          builder: (_) => const PaymentScreen(),
+        );
+
+      case Routes.orderDone:
+        return MaterialPageRoute(
+          builder: (_) => const OrderDone(),
+        );
+
       default:
         return null;
     }

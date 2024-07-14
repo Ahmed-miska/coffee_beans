@@ -8,5 +8,12 @@ class Routes {
   static const String otp = '/otp';
   static const String accountCreated = '/accountCreated';
   static const String home = '/home';
+  static const String coffeeDetailsOne = '/coffeeDetailsOne';
+  static const String coffeeDetailsTwo = '/coffeeDetailsTwo';
+  static const String order ='/order';
+  static const String payment = '/payment';
+  static const String visa = '/visa';
+  static const String vodafone = '/vodafone';
+  static const String orderDone = '/orderDone';
 
 }
